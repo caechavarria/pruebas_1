@@ -1,6 +1,6 @@
 ---
 # vars file 
-portgroup_name: '{{ portgroup_name }}
+portgroup_name: '{{ portgroup_name_PR }}
 ip: '{{ IP }}'                                               # Dirección IP a asignar    
 netmask: '{{ MASK }}'                                        # Mascara de Red a asignar
 gateway: '{{ GW }}' 
