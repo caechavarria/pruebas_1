@@ -9,3 +9,5 @@
         portgroup: '{{ portgroup }}'
         vlan_id: '12'
         validate_certs: False
+- name: waiting
+  shell: sleep 15
