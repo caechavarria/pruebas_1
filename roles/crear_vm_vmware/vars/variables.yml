@@ -1,0 +1,4 @@
+portgroup_name: '{{ port }}'
+ip: '{{ IP }}'                                               # Dirección IP a asignar    
+netmask: '{{ MASK }}'                                        # Mascara de Red a asignar
+gateway: '{{ GW }}'  
