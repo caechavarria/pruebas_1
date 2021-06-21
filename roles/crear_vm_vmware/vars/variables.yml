@@ -1,4 +1,4 @@
-portgroup_name: 'pg45'
+#portgroup_name: 'pg45'
 ip: '{{ IP }}'                                               # Dirección IP a asignar    
 netmask: '{{ MASK }}'                                        # Mascara de Red a asignar
 gateway: '{{ GW }}'  
