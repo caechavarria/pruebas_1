@@ -1,2 +1,6 @@
 ---
-# vars file for alertas_moviles
+# vars file 
+portgroup_name: '{{ IP }}
+ip: '{{ IP }}'                                               # Dirección IP a asignar    
+netmask: '{{ MASK }}'                                        # Mascara de Red a asignar
+gateway: '{{ GW }}' 
