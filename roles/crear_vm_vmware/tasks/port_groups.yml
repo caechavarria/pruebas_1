@@ -7,6 +7,6 @@
         password: 'Lab2021*'
         esxi_hostname: '10.215.99.60'
         switch_name: "vSwitch0"
-        portgroup_name: '{{ portgroup_name }}'
+        portgroup_name: 'pg45'
         vlan_id: '12'
         validate_certs: False
