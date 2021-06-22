@@ -78,4 +78,4 @@
         wait_for_ip_address: yes        
   delegate_to: localhost
   register: deploy
-  with_items: start=1 end={{ numb_vm }}      
+  with_sequence: start=1 end={{ numb_vm }}     
