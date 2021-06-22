@@ -7,7 +7,7 @@
         esxi_hostname: '10.215.99.60'
         switch_name: '{{ vSwitch0 }}'
         portgroup: '{{ portgroup }}'
-        vlan_id: '12'
+        vlan_id: '{{ vlan }}'
         validate_certs: False
 - name: waiting
   shell: sleep 15
