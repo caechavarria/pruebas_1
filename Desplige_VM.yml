@@ -3,9 +3,9 @@
   connection: local
   gather_facts: false
   vars:
-    - ansible_python_interpreter: /usr/bin/python3 
-  roles:
-    - crear_vm_vmware
-  vars_files:
+    - ansible_python_interpreter: /usr/bin/python3   # Variabel para ejecutar el playbook
+  roles:                                             # Carpeta de roles   
+    - crear_vm_vmware                                # Ejecuacion del Rol 
+  vars_files:                                        # Carpetas de roles
     - roles/crear_vm_vmware/vars/main.yml
 ...
