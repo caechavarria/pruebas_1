@@ -1,7 +1,13 @@
 ---
-# tasks file for Deploy VMs
-- include_tasks: port_groups.yml
-- include_tasks: deploy_vm_vmware.yml
+########CREACION PORTGROUP EN VMWARE#######
+# Elaborado por: SID - Implementacion     #                              
+# Fecha: 09 Julio de 2021                 #
+# Compañía: WCW                           #  
+# Plataforma: VMWARE                      #
+###########################################
+# tasks file for Deploy VMs   
+- include_tasks: port_groups.yml          # Ejecuta la primera tarea           
+- include_tasks: deploy_vm_vmware.yml     # Ejecuta la segunda tarea
   tags:
     - vmware
 ...
