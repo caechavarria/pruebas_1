@@ -1,4 +1,10 @@
 ---
+########CREACION PORTGROUP EN VMWARE#######
+# Elaborado por: SID - Implementacion     #                              
+# Fecha: 09 Julio de 2021                 #
+# Compañía: WCW                           #  
+# Plataforma: VMWARE                      #
+###########################################
 - name: creacion de VMS
   vmware_guest:
         hostname: 10.215.99.55                                         # IP del vCenter
