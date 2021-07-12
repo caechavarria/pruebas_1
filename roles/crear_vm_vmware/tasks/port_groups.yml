@@ -1,13 +1,18 @@
 ---
+########CREACION PORTGROUP EN VMWARE#######
+# Elaborado por: SID - Implementacion     #                              
+# Fecha: 09 Julio de 2021                 #
+# Compañía: WCW                           #  
+# Plataforma: VMWARE                      #
+###########################################
 - name: Add Portgroup with Promiscuous
   vmware_portgroup:
-        hostname: '10.215.99.55'
-        username: 'administrator@vsphere.local'
-        password: 'Lab2021*'
-        esxi_hostname: '10.215.99.60'
-        switch_name: '{{ vSwitch0 }}'
-        portgroup: '{{ portgroup }}'
-        vlan_id: '{{ vlan }}'
-        validate_certs: False
+        hostname: "10.215.99.55"                      # IP del vCenter
+        username: "administrator@vsphere.local"       # Usuario de vCenter
+        password: "Lab2021*"                          # Password de vCenter
+        esxi_hostname: '10.215.99.60'                 # IP del esx
+        switch_name: "{{ vswitch_name }}"             # Nombre Vswicht donde va quedar el Portgroup
+        portgroup_name: "{{ portgroup_name }}"        # Nombre de PortGroup a visualizar en vmware
+        vlan_id: "{{ vlan_id }}"                      # Nmbre o  numero  de la Vlan a crear
 - name: waiting
   shell: sleep 15
