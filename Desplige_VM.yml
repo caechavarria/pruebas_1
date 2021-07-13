@@ -6,6 +6,6 @@
     - ansible_python_interpreter: /usr/bin/python3   # Variabel para ejecutar el playbook
   roles:                                             # Carpeta de roles   
     - crear_vm_vmware                                # Ejecuacion del Rol 
-  vars_files:                                        # Carpetas de roles
-    - roles/crear_vm_vmware/vars/main.yml
+  vars_files:                                        # Carpetas de variables
+    - roles/crear_vm_vmware/vars/main.yml            # Archivo de Variables 
 ...
